@@ -12,7 +12,10 @@
 
 ## Comment 2 — Deduplication
 **What I did:**
+- Implemented a duplicate check before creating a new watchlist entry. The implementation follows the same pattern used by `add_to_collection()` so the behavior is consistent across services.
+
 **How I verified:**
+- Confirmed duplicate additions raise the expected exception and that only one database entry exists for a user/film pair.
 
 ## Comment 3 — Missing test
 **What I did:**
