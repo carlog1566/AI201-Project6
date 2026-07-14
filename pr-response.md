@@ -19,7 +19,10 @@
 
 ## Comment 3 — Missing test
 **What I did:**
+- Created `tests/test_watchlist.py` and added a test that verifies adding a nonexistent film raises `FilmNotFoundError`.
+
 **How I verified:**
+- Ran the new watchlist test individually and then executed the complete test suite to ensure nothing else regressed.
 
 ## Comment 4 — Default visibility
 **My position:**
